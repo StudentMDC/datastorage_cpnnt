@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+}
+:root {
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--Very-Dark-Blue);
+  color: var(--Pale-Blue);
+}
+.flex {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  align-items: center;
+  height: 100vh;
+  background-image: url("images/bg-desktop.png");
+  background-position: center bottom;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+.flex .forma1 { 
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background-color: var(--Dark-Blue);
+  width: 300px;
+  height: 200px;
+  border-radius: 10px 99px 10px 10px;
+  padding: 20px 15px 30px 15px;
+}
+.flex .forma1 > img {
+  display: block;
+  max-width: 100%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.flex .forma1 .form1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  column-gap: 20px;
+  padding: 30px;
+}
+.flex .forma1 .form1 span {
+  position: relative;
+}
+.flex .forma1 .form1 span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 40px;
+  width: 40px;
+  transform: translate(-50%, -50%);
+  background-color: hsl(229deg 57% 11% / 49%);
+  border-radius: 5px;
+}
+.flex .form2 {
+  background-color: var(--Dark-Blue);
+  width: 600px;
+  height: 100px;
+  border-radius: 10px;
+}
+.flex .form2 p {
+  margin-left: 30px;
+}
+.flex .form2 span {
+  display: block;
+  position: relative;
+  background-color: var(--Very-Dark-Blue);
+  width: 500px;
+  height: 20px;
+  border-radius: 10px;
+}
+.flex .form2 .inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.flex .form2 span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 20px;
+  background: linear-gradient(45deg, #ffa151, #d3203f);
+  border-radius: 100px;
+}
+.flex .form2 span::after {
+  content: "";
+
+}
